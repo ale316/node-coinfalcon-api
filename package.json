@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/ale316/node-coinfalcon-api/issues"
   },
-  "homepage": "https://github.com/ale316/node-coinfalcon-api#readme"
+  "homepage": "https://github.com/ale316/node-coinfalcon-api#readme",
+  "dependencies": {
+    "es6-actioncable": "^0.5.5"
+  }
 }
