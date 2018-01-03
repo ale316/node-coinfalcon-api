@@ -1,0 +1,25 @@
+{
+  "name": "coinfalcon-api",
+  "version": "0.0.1",
+  "description": "A wrapper for Coin Falcon's REST and websocket api Edit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ale316/node-coinfalcon-api.git"
+  },
+  "keywords": [
+    "coinfalcon",
+    "api",
+    "websocket",
+    "node"
+  ],
+  "author": "Alessandro Marin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ale316/node-coinfalcon-api/issues"
+  },
+  "homepage": "https://github.com/ale316/node-coinfalcon-api#readme"
+}
