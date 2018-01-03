@@ -1,1 +1,2 @@
-module.exports = require('./src/CoinFalcon');
+module.exports = require('./src/Api');
+module.exports.Websocket = require('./src/Websocket')

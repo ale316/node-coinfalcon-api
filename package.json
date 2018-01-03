@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ale316/node-coinfalcon-api#readme",
   "dependencies": {
-    "es6-actioncable": "^0.5.5"
+    "es6-actioncable": "^0.5.5",
+    "websocket": "^1.0.25"
   }
 }
