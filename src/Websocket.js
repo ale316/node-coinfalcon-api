@@ -59,7 +59,7 @@ class Websocket extends EventEmitter {
                 this.emit(`${channel}:${evt}`, data);
             },
             disconnected: () => {
-                this.emit(`${channel}:connected`);
+                this.emit(`${channel}:disconnected`);
             }
         });
     }
