@@ -39,7 +39,17 @@ class Websocket extends EventEmitter {
      * @param {Object} payload [optional]
      */
     _normalize(channel, payload = {}) {
-        return { evt: "test", data: payload };
+        let evt = "unknown",
+            data = payload;
+        // CoinFalcon's websocket payloads usually look like this: { evtName: { event data... } }
+        const keys = Object.keys(payload);
+        // So if we only have one key, we can assume it's the event name
+        if (keys.length === 1) {
+            evt = keys.pop();
+            data = payload[evt];
+        }
+
+        return { evt: evt, data: data };
     }
 
     /* Public Methods */
