@@ -64,8 +64,9 @@ class Websocket extends EventEmitter {
             connected: () => {
                 this.emit(`${channel}:connected`);
             },
-            received: payload => {
-                const { evt, data } = this._normalize(channel, payload);
+            received: (payload, other) => {
+                let { evt, data } = this._normalize(channel, payload);
+                data = Object.assign({}, data, opts);
                 this.emit(`${channel}:${evt}`, data);
             },
             disconnected: () => {
